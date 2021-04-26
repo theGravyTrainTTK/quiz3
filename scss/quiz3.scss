@@ -61,6 +61,7 @@ header{
 
 .flex-nav {
     display: flex;
+    justify-content: space-evenly;
 }
 
 // navigation
@@ -69,7 +70,8 @@ nav{
     a{
         text-decoration: none;
         color: $text-color;
-        flex: 1;
+        //flex: 1;
+        flex-basis: 1;
         padding: 1em 2em;
     }
 }
@@ -89,14 +91,17 @@ main{
 
 .flex-two {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .sideleft{
-    flex: 1;
+    //flex: 1;
+    flex-basis: 30%;
 }
 
 .sideright{
-    flex: 2;
+    //flex: 2;
+    flex-basis: 60%;
 }
 
 .btn{
@@ -110,10 +115,12 @@ main{
 
 .flex-three {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .box{
-    flex: 1;
+    //flex: 1;
+    flex-basis: 30%;
     padding: 2em;
     text-align: center;
     color: $text-color;
